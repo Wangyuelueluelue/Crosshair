@@ -15,3 +15,17 @@
 本项目使用 MinGW (GCC) 编译，包含资源文件打包：
 1. 编译图标资源：`windres icon.rc -O coff -o icon.res`
 2. 编译主程序：`gcc main.c icon.res -o Crosshair.exe -mwindows -fexec-charset=GBK`
+
+## 💡 创作初衷
+作为一名硬核生存游戏玩家，我在游玩《SCUM》等游戏时遇到了一个极大的痛点：当角色在奔跑或进行某些战术动作时，原生的准星往往会消失。这在遭遇突发交火时非常致命。为了解决这个问题并保持屏幕视野的纯净，我开发了这款极简准星工具。它同样完美适用于《Rust》、《CS2》或任何需要稳定中心基准点的 FPS 射击游戏。
+
+## ⚠️ 游戏设置须知 (非常重要)
+**请务必将你的游戏画面设置为“无边框全屏 (Borderless / Windowed Fullscreen)”模式。**
+如果游戏处于“独占全屏 (Exclusive Fullscreen)”模式，游戏引擎将垄断显卡输出通道，导致操作系统的所有置顶窗口（包括本程序的准星）被强制遮挡。开启无边框模式即可完美叠加准星，且几乎不影响游戏帧数。
+
+## 💡 Motivation
+As a hardcore survival game player, I encountered a major pain point while playing *SCUM*: the native crosshair often disappears completely when the character is running or performing certain tactical movements. This can be fatal during sudden firefights. To solve this issue while keeping the screen UI clean, I developed this minimalist crosshair tool. It is also highly effective for *Rust*, *CS2*, or any FPS games that require a persistent center reference point.
+
+## ⚠️ Important Game Settings
+**You MUST set your game's display mode to "Borderless" or "Windowed Fullscreen".**
+If your game is running in "Exclusive Fullscreen" mode, the game engine takes complete control of the GPU output, which will forcibly hide all top-most Windows applications (including this crosshair overlay). Setting the game to Borderless mode ensures the crosshair displays perfectly without sacrificing your framerate.
